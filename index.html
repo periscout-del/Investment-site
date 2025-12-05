@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vertex Capital — Investment Solutions</title>
+  <meta name="description" content="Vertex Capital — diversified investment solutions for individuals & institutions." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" width="40" height="40"/><span>Vertex Capital</span></a>
+    <nav class="main-nav"><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="about.html">About</a><a href="contact.html" class="cta">Contact</a></nav>
+    <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Invest with clarity. Grow with confidence.</h1>
+        <p class="lead">Diversified portfolios, transparent fees, and dashboards.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="portfolio.html">Explore Portfolios</a>
+          <a class="btn ghost" href="contact.html">Talk to an advisor</a>
+        </div>
+      </div>
+      <div class="card dashboard-card">
+        <h3>Portfolio Snapshot</h3>
+        <canvas id="returnsChart" height="150"></canvas>
+        <ul class="snapshot-stats">
+          <li><strong id="total-value">$0</strong><span>Account Value</span></li>
+          <li><strong id="ytd-return">0%</strong><span>YTD Return</span></li>
+          <li><strong id="risk-level">Moderate</strong><span>Risk</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer container">
+  <p>© <span id="year"></span> Vertex Capital</p>
+</footer>
+</body>
+</html>
